@@ -1,0 +1,276 @@
+/* 
+.footer {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  padding: 40px 20px 20px;
+  text-align: center;
+  border-top: 1px solid #30363d;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-name {
+  font-size: 1.6rem;
+  color: #58a6ff;
+  margin-bottom: 5px;
+}
+
+.footer-role {
+  font-size: 1rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+.footer-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #9ba3af;
+}
+
+.footer-contact {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contact a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #58a6ff;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  margin: 0 12px;
+  color: #58a6ff;
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: #1f6feb;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 25px;
+  border-top: 1px solid #30363d;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+
+@media (max-width: 600px) {
+  .footer-contact {
+    font-size: 0.85rem;
+  }
+
+  .footer-social a {
+    font-size: 1.4rem;
+  }
+
+  .footer-name {
+    font-size: 1.3rem;
+  }
+} */
+
+.footer-section {
+  background-color: #0d1117;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: "Poppins", sans-serif;
+  /* box-shadow: 0px -4px 10px rgba(0, 191, 255, 0.1); */
+  position: relative;
+  overflow: hidden;
+    box-shadow: 10px -14px 10px rgba(0, 191, 255, 0.436);
+
+}
+
+.footer-content {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Animated Background Glow */
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #00bfff40, transparent 70%);
+  animation: pulse 6s infinite ease-in-out;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+}
+
+/* Brand Section */
+.footer-name {
+  font-size: 1.4rem;
+  color: #00bfff;
+  font-weight: 600;
+  text-shadow: 0 0 10px #00bfff;
+  
+}
+
+.footer-role {
+  color: #ccc;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-tech {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.tech-icon {
+  color: #00bfff;
+  margin: 0 4px;
+}
+
+/* Links Section */
+.footer-links h5 {
+  color: #00bfff;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00bfff;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+/* Social Icons */
+.footer-contact h5 {
+  color: #00bfff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  color: #00bfff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.footer-contact-item:hover .footer-icon {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #00bfff;
+}
+
+/* Divider */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #00bfff, transparent);
+  margin: 30px 0;
+}
+
+/* Bottom Section */
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.footer-bottom span {
+  color: #00bfff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .footer-contact-item {
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 10px;
+  }
+
+  .footer-name {
+    font-size: 1.2rem;
+  }
+}
+.link{
+  text-decoration: none;
+  color: white;
+  
+}
+.hover :hover{
+  color: #00bfff;
+}
+.footer-phone {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.footer-phone:hover {
+  color: #00bfff;
+}
