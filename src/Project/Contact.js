@@ -14,13 +14,15 @@
       if (loading) return;
       setLoading(true);
 
-      axios.post("https://yugendraportfolio.onrender.com/contact", { name, email, message })
+      axios.post("https://yugendraportfolio2.onrender.com/contact", { name, email, message })
         .then((res) => {
           alert("✅ Message sent successfully!");
+          console.log(res);
+          
           setName("");
           setEmail("");
           setMessage("");
-        })
+        })  
         .catch((err) => {
           console.error(err);
           alert("❌ Failed to send message. Please try again.");
@@ -43,7 +45,7 @@
               </p>
 
               <div className="info-item">
-                <FaEnvelope className="icon" />
+              <FaEnvelope className="footer-icon" />
                 <a href="mailto:aviligondayugendra18@gmail.com">
                   aviligondayugendra18@gmail.com
                 </a>
