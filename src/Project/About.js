@@ -49,7 +49,7 @@ const About = () => {
 
             <div className="about-card">
               <h3>💼 Experience</h3>
-              <p><b>MERN Full Stack Intern</b> — Enut Technologies Pvt Ltd (Sep 2025 – Feb 2026)</p>
+              <p><b>MERN Full Stack Development Intern</b> — Enut Technologies Pvt Ltd (Sep 2025 – Feb 2026)</p>
               <p>Developed and deployed responsive full-stack web apps using React.js, Node.js, and MongoDB.</p>
             </div>
           </div>
